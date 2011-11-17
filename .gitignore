@@ -1,3 +1,4 @@
 .*
 *.pyc
 !.gitignore
+Settings/Auto Save Session.sublime_session
