@@ -1,0 +1,5 @@
+[
+{ "keys": ["super+alt+f3"], "command": "goto_python_definition"},
+{ "keys": ["super+alt+r"], "command": "python_refactor_rename"},
+{ "keys": ["super+y"], "command": "python_get_documentation"}
+]

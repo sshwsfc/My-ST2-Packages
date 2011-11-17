@@ -1,0 +1,400 @@
+{
+	"folder_history":
+	[
+	],
+	"last_window_id": 5,
+	"settings":
+	{
+		"new_window_height": 480.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/sshwsfc/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings"
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 198.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 640.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "newgit/wigame_mobile/htmls/wibox/me/main.html",
+					"settings":
+					{
+						"buffer_size": 2667,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "newgit/wigame_mobile/htmls/wibox/me/u.html",
+					"settings":
+					{
+						"buffer_size": 3208,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "\n(function($){\n	$('html').addClass('ui-mobile-rendering');\n	\n	$.extend($, {\n		icon : {\n			app : 		function(url){ return url || $.default_icon('wy_default_app.png')},\n			avatar : 	function(url, gender){ \n				if(url) return url;\n				if(gender == undefined){\n					gender = '';\n				}\n				gender = gender.toUpperCase();\n				if(gender == 'F'){\n					return $.default_icon('wy_default_avatar_female.png');\n				} else{\n					return $.default_icon('wy_default_avatar.png');\n				}\n			},\n			leaderboard : 	function(url){ return url || $.default_icon('wy_icon_leaderboard.png')},\n			achievement : 	function(url){ return url || $.default_icon('wy_default_achievement.png')},\n			achievement_lock : 	function(url){ return $.default_icon('wy_icon_achievement_lock.png')},\n			items : 		function(url){ return url || $.default_icon('wy_default_accessory.png')},\n			challenge : 		function(url){ return url || $.default_icon('wy_default_challenge.png')}\n		},\n		default_icon : function(name){\n			return $.images_url('defaults/' + name);\n		},\n		emotions : [\n			{\"t\":\":)\", \"id\":\"1\"},\n			{\"t\":\":D\", \"id\":\"2\"},\n			{\"t\":\":o\", \"id\":\"3\"},\n			{\"t\":\";)\", \"id\":\"4\"},\n			{\"t\":\"love\", \"id\":\"5\"},\n			{\"t\":\":P\", \"id\":\"6\"},\n			{\"t\":\"cry\", \"id\":\"7\"},\n			{\"t\":\"furious\", \"id\":\"8\"},\n			{\"t\":\":(\", \"id\":\"9\"},\n			{\"t\":\"-_!\", \"id\":\"10\"},\n			{\"t\":\"zz\", \"id\":\"11\"},\n			{\"t\":\"helpless\", \"id\":\"12\"},\n			{\"t\":\"8)\", \"id\":\"13\"},\n			{\"t\":\"dizzy\", \"id\":\"14\"},\n			{\"t\":\"what\", \"id\":\"15\"},\n			{\"t\":\"jiong\", \"id\":\"16\"},\n			{\"t\":\"8(\", \"id\":\"17\"},\n			{\"t\":\"angry\", \"id\":\"18\"},\n			{\"t\":\"cool\", \"id\":\"19\"},\n			{\"t\":\"8P\", \"id\":\"20\"}\n		],\n		get_emotion : function(code){\n			for(i=0;i<$.emotions.length;i++){\n				if($.emotions[i]['t'] == code){\n					return $.emotions[i]['id'];\n				}\n			}\n			return false;\n		},\n		emotions_reg_val : function(){\n			if(window['emotions_reg_val'] == undefined){\n				reg = '';\n				key_reg = /[\\-\\^\\$\\.\\*\\+\\?\\=\\!\\:\\|\\\\\\/\\(\\)\\[\\]\\{\\}]/g;\n				for(i=0;i<$.emotions.length;i++){\n					var code = $.emotions[i]['t'].replace(key_reg, function(all, w){return '\\\\' + all;});\n					reg = reg + (reg==''?'':'|') + code;\n				}\n				reg = '\\\\\\[('+ reg +')\\\\\\]';\n				window['emotions_reg_val'] = reg;\n			}\n			return window['emotions_reg_val'];\n		},\n		emotions_reg : function(){\n			if(window['emotions_reg'] == undefined){\n				window['emotions_reg'] = new RegExp($.emotions_reg_val(), 'g');\n			}\n			return window['emotions_reg'];\n		}\n	});\n	var defaultConfig = {\n		apiserver: (window['api_base'] != undefined)? window['api_base'] : '',\n		platform: 'pc',\n		system: 'pc',\n		shell: 'browser'\n	};\n	var supportTouch = \"ontouchend\" in document,\n		scrollEvent = \"touchmove scroll\",\n		touchStartEvent = supportTouch ? \"touchstart\" : \"mousedown\",\n		touchStopEvent = supportTouch ? \"touchend\" : \"mouseup\",\n		touchMoveEvent = supportTouch ? \"touchmove\" : \"mousemove\";\n	\n	$.tapHandle = function(el, fn){\n		var moved = false,\n			originalType,\n			timer;\n			\n		function moveHandler() {\n			el.unbind( touchMoveEvent, moveHandler );\n			moved = true;\n			clearTimeout( timer );\n			el.removeClass('down');\n		}\n		\n		timer = setTimeout(function() {\n			if ( !moved ) {\n				el.addClass('down');\n			}\n		}, 40 );\n		\n		el.bind( touchMoveEvent, moveHandler)\n		.bind( touchStopEvent, function( event ) {\n			el.unbind( touchMoveEvent, moveHandler );\n			el.unbind( touchStopEvent );\n			clearTimeout( timer );\n			if ( !moved ) {\n				setTimeout(function(){\n					el.removeClass('down');\n				}, 100);\n				if(fn != undefined){fn.call(el, event);}\n			}else{\n				el.removeClass('down');\n			}\n		});\n	};\n\n	//utils\n	$.extend($, {\n		app_id : function(){\n			if($.url.param('app_id')){\n				return 'app_id=' + $.url.param('app_id');\n			}else{\n				return '';\n			}\n		},\n		media_url : function(path){\n		    if(window['static_url_prefix']){\n		        return window['static_url_prefix'] + path;\n		    }else{\n			    return 'static/' + path;\n		    }\n		},\n		images_url : function(path){\n			return $.media_url('imgs/'+ ($.config('highdpi') == '2'?'highdpi/':'') +path);\n		},\n        lazy_page : function(){\n            $('html').addClass('lazy_show');\n        },\n        show_page : function(){\n            $('html').removeClass('ui-mobile-rendering');\n        },\n		storage : {\n			set : function(k, v){\n				if(!!window.localStorage){\n					return window.localStorage.setItem(k,v);\n				}\n			},\n			get : function(k){\n				if(!!window.localStorage){\n					return window.localStorage.getItem(k);\n				}\n			},\n			del : function(k){\n				if(!!window.localStorage){\n					return window.localStorage.removeItem(k);\n				}\n			}\n		},\n		config : function(key){\n			v = $.cookie('wigame_config_' + key);\n			if(v != null){return v;}\n			return defaultConfig[key];\n		},\n		location : function(){\n			lc = $.config('location');\n\n			if(lc && lc.split(',').length == 2){\n				me_loc = [parseFloat(lc.split(',')[0]), parseFloat(lc.split(',')[1])];\n				if(me_loc[0] == 0 && me_loc[1] == 0){\n					return null;\n				}\n				return me_loc;\n			}else{\n				return null;\n			}\n		},\n		error: function(msg){\n			if($.config('shell') == 'browser'){\n				alert(msg);\n			} else if($.config('shell') == 'wigame_iphone' || $.config('shell') == 'wigame_android') {\n				$.runaction('showerror', {'msg': msg});\n			}\n		},\n		info: function(msg){\n			if($.config('shell') == 'browser'){\n				alert(msg);\n			} else if($.config('shell') == 'wigame_iphone' || $.config('shell') == 'wigame_android') {\n				$.runaction('showinfo', {'msg': msg});\n			}\n		},\n		cut_text: function(text, max_length){\n			if(window['text_reg'] == undefined){\n				var loc_reg = '\\\\\\[location=(.+?)\\\\\\]';\n				var html_tag = '<[^>]+>?[^<]*>';\n				window['text_reg'] = RegExp(\"(?:(\" + [html_tag, $.emotions_reg_val(), loc_reg].join(\")|(\") + \"))\", \"\");\n			}\n			var all_reg = window['text_reg'];\n			var result = '',\n			source = text,\n			len = 0,\n			match;\n			while(match = all_reg.exec(source)){\n				if((len + match.index) >= max_length){\n					result += source.slice(0, max_length - len);\n					result += '..';\n					return result;\n				}\n				result += source.slice(0, match.index);\n				result += match[0];\n				len += match.index + ((match[0][0]=='<')?0:2);\n				source = source.slice(match.index + match[0].length);\n				if(len > max_length){\n					break;\n				}\n			}\n			if((len + source.length) > max_length){\n				if(max_length >len){\n					result += source.slice(0, max_length - len);\n				}\n				result += '..';\n			}else{\n				result += source;\n			}\n			return result;\n		},\n		smart_text: function(text, max_length, landscape_length){\n			var cut_text = $.cut_text(text, max_length);\n			if(landscape_length == undefined){\n				return cut_text;\n			} else {\n				var portrait = '<span class=\"portrait\">' + cut_text + '</span>';\n				var landscape = '<span class=\"landscape\">' + $.cut_text(text, landscape_length) + '</span>';\n				return portrait + landscape;\n			}\n		},\n		status_text: function(status){\n			return {'0': '', '1': __('在线')}[status];\n		},\n		floor_text: function(f){\n			f = parseInt(f);\n			if(f <= 3){\n				return {1:__(\"沙发\"), 2:__(\"板凳\"), 3:__(\"地板\")}[f];\n			}\n			return f + __('楼');\n		},\n		run : function(url, method, params, cb, error_cb){\n			url = $.get_url(url);\n			if($.url.param('app_id') && method=='get'){\n				params['app_id'] = $.url.param('app_id');\n			}\n			var tag = \"ajax_callback_tag_\" + Math.ceil(Math.random() * 1000000); \n			if(method.toLowerCase() == 'get' && false){\n				var tag = method.toLowerCase() + url + '?' + $.param(params);\n				var cache_data = $.storage.get(tag);\n				if(cache_data){\n					try{\n						return cb(JSON.parse(cache_data));\n					}catch(err){}\n				}\n			} else {\n				var tag = \"ajax_callback_tag_\" + Math.ceil(Math.random() * 1000000); \n			}\n			\n			if($.config('shell') == 'browser'){\n				if(true){\n					params['app_key'] = '8d49f16fe034b98b';\n					params['_test_user'] = 'rt13111';\n				}\n				url = $.config('apiserver') + url;\n				\n				method = method.toUpperCase();\n				if(method == 'GET' || method == 'DELETE'){\n					url = url + '?' + $.param(params);\n				}\n				\n				$.ajax({\n				  url: url,\n				  type: method.toUpperCase(),\n				  dataType: 'json',\n				  data: params,\n				  windowname: true,\n				  success: function(data){\n					if(data && tag.indexOf('get') == 0){\n						$.storage.set(tag, data);\n					}\n					cb(data);\n				  },\n				  error: function(xhr, status, e){\n					if(error_cb != undefined){\n						error_cb(xhr, status, e);\n					}\n					try{\n						data = $.parseJSON(xhr.response);\n					}catch(err){\n						console.log(err);\n						data = {'msg':__('服务器错误')};\n					}\n					var msg = '';\n					if(data['msg']){\n						msg = data['msg'];\n					}else{\n						msg = data;\n					}\n					$('.loading').each(function(e){\n						$(this).removeClass('loading');\n						$(this).addClass('error');\n						$(this).html(msg);\n					});\n				}\n				});\n			} else if($.config('shell') == 'wigame_iphone') {\n				if($.callbacks == undefined){\n					$.callbacks = {};\n				}\n				if(!(tag in $.callbacks)){\n					$.callbacks[tag] = cb;\n					if(error_cb != undefined){\n						$.callbacks[tag + '__error__cb'] = error_cb;\n					}\n					wigame_request(url, method, $.param(params), tag);\n				}\n			} else if($.config('shell') == 'wigame_android' && window['wigame']) {\n				if($.callbacks == undefined){\n					$.callbacks = {};\n				}\n				if(!(tag in $.callbacks)){\n					$.callbacks[tag] = cb;\n					if(error_cb != undefined){\n						$.callbacks[tag + '__error__cb'] = error_cb;\n					}\n					window['wigame'].ajax(url, method, $.param(params), tag);\n				}\n			}\n		},\n		runcb : function(tag, code, result, content){\n			cb = $.callbacks[tag];\n			if($.isEmptyObject(result)){\n				data = '';\n			}else{\n				if(typeof(result) == 'string' && (result.indexOf('[') == 0 || result.indexOf('{') == 0)){\n					try{\n						data = JSON.parse(result);\n					}catch(err){\n						data = result;\n					}\n				}else{\n					data = result;\n				}\n			}\n			if(code == 200){\n				if(content){\n					cb(data, content);\n				}else{\n					cb(data);\n				}\n				if(data && tag.indexOf('get') == 0){\n					try{$.storage.set(tag, JSON.stringify(data));\n					}catch(err){}\n				}\n			} else {\n				var error_tag = tag + '__error__cb';\n				var msg = '';\n				if(data['msg']){\n					msg = data['msg'];\n				}else{\n					msg = data;\n				}\n				if($.callbacks[error_tag] != undefined){\n					$.callbacks[error_tag](code, msg, data);\n				}else{\n					$('.loading:not(.noerror)').each(function(e){\n						$(this).removeClass('loading');\n						$(this).addClass('error');\n						$(this).html(msg);\n					});\n					if($.config('shell') == 'wigame_android') {\n						$.error(msg);\n					}\n				}\n			}\n		},\n		runaction : function(act, params, cb, error_cb){\n			if($.url.param('app_id')){\n				params['app_id'] = $.url.param('app_id');\n			}\n			if($.config('shell') == 'browser'){\n				//null\n			} else if($.config('shell') == 'wigame_iphone') {\n				tag = \"act_callback_tag_\" + Math.ceil(Math.random() * 1000000); \n				if(cb){\n					if($.callbacks == undefined){\n						$.callbacks = {};\n					}\n					$.callbacks[tag] = cb;\n					if(error_cb != undefined){\n						$.callbacks[tag + '__error__cb'] = error_cb;\n					}\n				}\n				wigame_action(act, $.param(params), tag);\n			} else if($.config('shell') == 'wigame_android' && window['wigame']) {\n				tag = \"act_callback_tag_\" + Math.ceil(Math.random() * 1000000); \n				if(cb){\n					if($.callbacks == undefined){\n						$.callbacks = {};\n					}\n					$.callbacks[tag] = cb;\n					if(error_cb != undefined){\n						$.callbacks[tag + '__error__cb'] = error_cb;\n					}\n				}\n				window['wigame'].ajax('/' + act, 'get', $.param(params), tag);\n			}\n		},\n		title : function(title){\n			$('title').text(title);\n			if($.config('shell') == 'wigame_iphone' || $.config('shell') == 'wigame_android') {\n				$.runaction('updatetitle', {'title': title});\n			}\n		},\n		layout : function(el){\n			if(el == undefined){\n				el = $('body');\n			}\n			\n			el.delegate( \"a\", touchStartEvent, function(e) {	$.tapHandle($(this)); });\n			el.delegate( \"td\", touchStartEvent, function(e) {	$.tapHandle($(this)); });\n			\n			el.delegate( \"li:not(.noclick)\", touchStartEvent, function(e) {			\n				t = $((e.target instanceof Text)?e.target.parentNode:e.target);\n				if(!t.is('a>img, td a p, .smallbtn, .card, .smallbtn span, .btn, input, select, textarea')){\n					el = $( this );\n					$.tapHandle(el, function(e){\n						if ( el.closest( \"a\" ).length > 0 ) {\n							el.find( \"a\" ).first().trigger( \"click\" );\n						} else if(el.find( \"div.popup:not(.fix)\" ).length == 1){\n							el.find( \"div.popup\" ).toggleClass('hidd');\n							e.stopPropagation();\n							e.preventDefault();\n						}\n					});\n				}\n			});\n			\n			el.find('.tabs a,.tabs2 a').tap(function(){\n				$(this).parent().parent().find('li').removeClass('active');\n				$(this).parent().addClass('active');\n				//window.location.hash = $(this).attr('id') + '_hash';\n			});\n			\n			if($.config('shell') == 'wigame_iphone' || $.config('shell') == 'wigame_android'){\n				//$('body').css('padding-top', '45px');\n				$('body').css('padding-bottom', '55px');\n			}\n			\n			if($.url.param('app_id')){\n				var app_id = $.url.param('app_id');\n				$('.with_app').each(function(e){\n					var link = $(this).attr('href');\n					if(link){\n						$(this).attr('href', link + (link.indexOf('?') == -1?'?':'&') + 'app_id=' + app_id);\n					}\n				});\n			}\n		},\n		classLevel : function(){\n			var classLevel = '';\n			var ua = navigator.userAgent;\n			if(ua.indexOf('Android') > 0){\n				classLevel = 'android ';\n				version = Number(ua.substring(ua.indexOf('Android') + 8, ua.indexOf('Android') + 11));\n				if(version > 2.0){\n					classLevel += 'box-shadow box-image ';\n				}\n			} else {\n				classLevel += 'box-shadow box-image ';\n				if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPad') > 0){\n					classLevel += 'iphone ';\n				} else {\n					classLevel += 'iphone ';\n				}\n			}\n			return classLevel;\n		},\n		human_time: function(postdate, isFull){  \n			var second = 1000;\n			var minutes = second*60;\n			var hours = minutes*60;\n			var days = hours*24;\n			var months = days*30;\n			var twomonths = days*365;\n			var myDate = new Date(Date.parse(postdate));   \n			if (isNaN(myDate))   {    \n				myDate =new Date(postdate.replace(/-/g, \"/\"));   \n			} \n			var nowtime = new Date();\n			var longtime =nowtime.getTime()- myDate.getTime();\n			var showtime = 0;\n			if( longtime > months*2 ){\n				var ymdhis = '';\n		        ymdhis += postdate.getUTCFullYear() + \"-\";\n		        ymdhis += (postdate.getUTCMonth() + 1) + \"-\";\n		        ymdhis += postdate.getUTCDate();\n		        if ( isFull === true )\n		        {\n		            ymdhis += \" \" + postdate.getUTCHours() + \":\";\n		            ymdhis += postdate.getUTCMinutes() + \":\";\n		            ymdhis += postdate.getUTCSeconds();\n		        }\n		        return ymdhis;\n			}\n			else if (longtime > months){return __(\"1个月前\");}\n			else if (longtime > days*7){return __(\"1周前\");}\n			else if (longtime > days){return(Math.floor(longtime/days)+__(\"天前\"));}\n			else if ( longtime > hours){return(Math.floor(longtime/hours)+__(\"小时前\"));}\n			else if (longtime > minutes){return(Math.floor(longtime/minutes)+__(\"分钟前\"));}\n			else if (longtime > second){return __(\"刚刚\");}\n			else{return __(\"刚刚\");}\n		},\n        utod: function(unixTime, isFull, timeZone){\n            if (typeof(timeZone) == 'number')\n            {\n                unixTime = parseInt(unixTime) + parseInt(timeZone) * 60 * 60;\n            }\n            var time = new Date(unixTime);\n            return $.human_time(time, isFull);\n        },\n		distance : function(target_loc, me_loc){\n			EARTH_RADIUS = 6378.137;\n\n			if(me_loc == undefined){\n				me_loc = $.location();\n				if(me_loc == null || me_loc.length != 2){\n					return '';\n				}\n			}\n\n			radLat1 = (target_loc[0] * Math.PI / 180);\n			radLat2 = (me_loc[0] * Math.PI / 180);\n\n			a = radLat1 - radLat2;\n			b = (target_loc[1] - me_loc[1]) * Math.PI / 180;\n\n			s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(b / 2), 2)));\n			s = s * EARTH_RADIUS;\n\n			if(s > 1){\n				return ''+Math.round(s)+__('公里');\n			} else {\n				if(s > 0.1){\n					return ''+Math.round(s*10)+__('百米');\n				}else{\n					return __('就在附近');\n				}\n			}\n\n			return __('距我%s公里',''+s);\n		},\n		tp : function(tmpl, data){\n			return $.tmpl(tmpl, data);\n		},\n		get_url : function(url){\n			if(url.substring(0,4) == 'api:'){\n				url = url.substring(4).split('.').join('/');\n			}\n			if(url.substring(0,1) != '/'){\n				url = '/' + url;\n			}\n			return url;\n		},\n		loadpage : function(fn){\n			//$(window).bind('loadpage', fn);\n			window['loadpage_fn'] = fn;\n		},\n		cookie : function(name, value, options) {\n		    if (typeof value != 'undefined') { // name and value given, set cookie\n		        options = options || {};\n		        if (value === null) {\n		            value = '';\n		            options.expires = -1;\n		        }\n		        var expires = '';\n		        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {\n		            var date;\n		            if (typeof options.expires == 'number') {\n		                date = new Date();\n		                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));\n		            } else {\n		                date = options.expires;\n		            }\n		            expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE\n		        }\n		        // CAUTION: Needed to parenthesize options.path and options.domain\n		        // in the following expressions, otherwise they evaluate to undefined\n		        // in the packed version for some reason...\n		        var path = options.path ? '; path=' + (options.path) : '';\n		        var domain = options.domain ? '; domain=' + (options.domain) : '';\n		        var secure = options.secure ? '; secure' : '';\n		        document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');\n		    } else { // only name given, get cookie\n		        var cookieValue = null;\n		        if (document.cookie && document.cookie != '') {\n		            var cookies = document.cookie.split(';');\n		            for (var i = 0; i < cookies.length; i++) {\n		                var cookie = cookies[i].replace( /^\\s\\s*/, \"\" ).replace( /\\s\\s*$/, \"\" );\n		                // Does this cookie string begin with the name we want?\n		                if (cookie.substring(0, name.length + 1) == (name + '=')) {\n		                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));\n		                    break;\n		                }\n		            }\n		        }\n		        return cookieValue;\n		    }\n		},\n		parse_content : function(content){\n			var loc_reg = /\\[location=(.+?)\\]/ig;\n			var content = content.replace(loc_reg, function(all, w){\n				return '<a onclick=\"javascript:$.show_location(\\''+w+'\\');\" class=\"location\"><img src=\"'+$.images_url('loc.png')+'\" class=\"location\"/></a>';\n			});\n			var bq_reg = $.emotions_reg();\n			content = content.replace(bq_reg, function(all, w){\n				var emo = $.get_emotion(w);\n				if(emo){\n					return '<img src=\"' + $.images_url('bq/wy/'+emo+'.png') + '\" class=\"emotion\"/>';\n				}else{\n					return '<span class=\"emotion\">'+w+'</span>';\n				}\n			});\n			return content;\n		},\n		show_location : function(loc){\n			$.runaction('showlocation', {'location': loc});\n		},\n		progress_width : function(p){\n			return Math.ceil(p*50);\n		},\n		url_encode: function(url){\n			return encodeURIComponent(url);\n		},\n		url_decode: function(t){\n			return decodeURIComponent(t);\n		},\n		rating: function(r){\n			var html = \"\";\n			for (var i=0; i < parseInt(r); i++) {\n				html += '<span class=\"rate full\">*</span>';\n			}\n			return html;\n		},\n		load_adv: function(){\n			var position = [];\n			var advobjs = {};\n			$('.advresource').each(function(o){\n				if($(this).attr('position')){\n					position.push($(this).attr('position'));\n					advobjs[$(this).attr('position')] = $(this);\n				}\n			});\n			var positions = position.join(',');\n			if(positions){\n				$.run('api:adv', 'get', {'positions':positions}, function(data){\n					if(data){\n						for (var i=0; i < data.length; i++) {\n							var adinfo = data[i];\n							var advobj = advobjs[adinfo['position']];\n							if(advobj){\n								advobj.css('background-image', 'url(\"'+adinfo['img']+'\")');\n								advobj.attr('link', adinfo['link']);\n								advobj.attr('ad_id', adinfo['id']);\n								\n								advobj.click(function(e){\n									var link = $(this).attr('link');\n									$.run('api:adv', 'post', {'position':$(this).attr('position'),'ad_id':$(this).attr('ad_id')}, function(data){\n										if(link.length > 7 && link.substr(0, 7) == 'http://'){\n											if($.config('shell') == 'wigame_android'){\n												$.runaction('startapp', {'uri': link, 'action':'ACTION_VIEW'});\n											} else if($.config('shell') == 'wigame_iphone'){\n												$.runaction('requireauth', {'ra_url': link, 'ra_action': 'share'}, function(data, content){});\n											} else {\n												window.location.href = link;\n											}\n										} else {\n											window.location.href = link;\n										}\n									});\n									return false;\n								});\n								if(adinfo['position'] != 'wibox_f1' && adinfo['position'] != 'wibox_f2'){\n									advobj.css('display', 'block');\n								}\n								advobjs[adinfo['position']] = null;\n							}\n						};\n					}\n				});\n			}\n		},\n	});\n	\n	$.extend($.fn, {\n		taps : function(fn){\n			$(this).each(function(e){\n				var el = $(this);\n				el.bind(touchStartEvent, function(){\n					$.tapHandle(el, fn);\n				});\n			})\n		},\n		a : function(url, params, cb){\n			var el = $(this);\n			el.tpload();\n			el.loading();\n			$.run($.get_url(url), 'get', params || {}, function(data){\n				el.tp(data);\n				if(cb != undefined){\n					cb(el, data);\n				}\n			});\n		},\n		run : function(url, params, cb){\n			var el = $(this);\n			el.tpload();\n			el.loading();\n			$.run($.get_url(url), 'get', params || {}, function(data){\n				if(cb != undefined){\n					cb(el, data);\n				}\n			});\n		},\n		tpload : function(){\n			$(this).each(function(){\n				var el = $(this);\n				if(el.attr('tmpl') == undefined){\n					tmpl = el.attr('id') + '_tmpl';\n					$.template(tmpl, el.html());\n					el.attr('tmpl', tmpl);\n					el.empty();\n				}\n			})\n		},\n		loading : function(){\n			$(this).each(function(){\n				var el = $(this);\n				if(el.is('ul')){\n					el.html('<li><span class=\"loading\">'+__('数据读取中...')+'<span></li>');\n				}else if(el.is('tr')){\n					el.html('<td><span class=\"loading\">'+__('数据读取中...')+'<span></td>');\n				}else{\n					el.html('<span class=\"loading\">'+__('数据读取中...')+'<span>');\n				}\n			});\n		},\n		tp : function(data){\n			$(this).each(function(e){\n				var el = $(this);\n				if(el.attr('tmpl') == undefined){\n					tmpl = el.attr('id') + '_tmpl';\n					$.template(tmpl, el.html());\n					el.attr('tmpl', tmpl);\n					el.empty();\n				} else {\n					tmpl = el.attr('tmpl');\n				}\n				el.html($.tp(tmpl, data));\n			});\n		},\n		tap : function(fn){\n			$(this).bind('click', fn);\n		},\n		bwidget : function(url, params, cb){\n			$(this).filter('ul.ls').each(function(e){$(this).blist($.get_url(url), params, cb);});\n		},\n		bwidget_load : function(params, clean, restart){\n			var el = $(this);\n			\n			if(el.attr('pagesize') == undefined){ el.attr('pagesize', 25); }\n			if(el.attr('maxitems') == undefined){ el.attr('maxitems', 50); }\n			\n			if(clean || clean == undefined){\n				el.empty();\n				el.html(el.attr('loading_tmpl'));\n			}\n			if(restart || restart == undefined){\n				var page = params['page'] || $.url.param('page');\n				var start = params['start'] || $.url.param('start');\n				if(page){\n					if(page == 'last'){\n						el.attr('start', '-1');\n					}else{\n						var pstart = (Math.max(1, Number(page)) -1) * Number(el.attr('pagesize'));\n						el.attr('start', pstart);\n					}\n				}else if(!isNaN(start)){\n					el.attr('start', start);\n				}else{el.attr('start', 0);}\n			}\n		},\n		btable : function(url, params, innercb, clean, restart){\n			var el = $(this);\n			if(params == undefined) params = {};\n			var url = $.get_url(url);\n			var col_count = parseInt(el.attr('col_count') || 4);\n			\n			if(el.attr('item_tmpl') == undefined){\n			    var td_item = el.find('tr:first-child td:first-child');\n			    td_item.addClass('num' + col_count);\n			    \n				$.template(el.attr('id') + '_item_tmpl', td_item.outerHtml());\n				el.attr('item_tmpl', el.attr('id') + '_item_tmpl');\n				\n				loadempty = el.find('tr.empty');\n				if(loadempty.length == 1){\n				    loadempty.find('td').attr('colspan', col_count);\n    				el.attr('empty_tmpl', loadempty.outerHtml());\n    			} else {\n					el.attr('empty_tmpl', '<tr class=\"empty\"><td colspan=\"'+col_count+'\">'+__('没有任何数据...')+'</td></tr>');\n				}\n				loadel = el.find('tr.loading');\n				if(loadel.length == 1){\n				    loadel.find('td').attr('colspan', col_count);\n					el.attr('loading_tmpl', loadel.outerHtml());\n				} else {\n					el.attr('loading_tmpl', '<tr class=\"loading\"><td colspan=\"'+col_count+'\"><span class=\"loading\">'+__('数据读取中...')+'</span></td></tr>');\n				}\n				\n				loadmore = el.find('tr.more');\n				if(loadmore.length == 1){\n				    loadmore.find('td').attr('colspan', col_count);\n					el.attr('loadmore_tmpl', loadmore.outerHtml());\n				}\n\n				el.empty();\n		    }\n		    \n			el.bwidget_load(params, clean, restart);\n			var ps = $.extend($.extend({}, params), {'start': el.attr('start'), 'count': el.attr('pagesize')});\n			\n			$.run(url, 'get', ps, function(data){\n			    data['_params'] = params;\n			    if(el.attr('items_key')){\n			        if(el.attr('items_key') == 'data'){\n			            var items = data;\n			        }else{\n			            var items = data[el.attr('items_key')];\n			        }\n			    }else{\n			        var items = data.items;\n			    }\n				if(items.length > 0){\n					el.find('tr.loading, tr.empty, tr.more').remove();\n				    var _cols = [];\n					for (var i=0; i < items.length; i++) {\n						var item = items[i];\n						item['index'] = Number(el.attr('start')) + i;\n						item['rank'] = Number(el.attr('start')) + i + 1;\n						if(i%col_count == 0){\n						    _cols.push($('<tr></tr>'));\n						}\n						_cols[_cols.length-1].append($.tp(el.attr('item_tmpl'), item));\n					}\n					for (var i=0; i < _cols.length; i++) {\n					   el.append(_cols[i]);\n					};\n					if(el.attr('loadmore_tmpl') && !isNaN(data['total_count']) && Number(data.total_count) > Number(el.attr('start')) + items.length){\n						el.append($.tp(el.attr('loadmore_tmpl'), data));\n						el.find('tr.more td a').bind('click', function(event) {\n							$(this).unbind('click').addClass('disable loading').text(__('数据读取中...'));\n							var table = $(this).parent().parent().parent();\n							table.attr('start', Number(table.attr('start')) + Number(table.attr('pagesize')));\n							table.btable(url, params, innercb, false, false);\n						});\n					}\n			    } else {\n					if(isNaN(data['total_count']) || data.total_count == 0){\n						el.html(el.attr('empty_tmpl'));\n					} \n				}\n				if(innercb != undefined){\n					innercb(el, data);\n				}\n		    });\n	    },\n		blist : function(url, params, innercb, clean, restart){\n			var el = $(this);\n			if(params == undefined) params = {};\n			if(el.next().is('ul.page')){\n				el.next().hide();\n			}\n			var title_el = el.prev();\n			if(title_el.length){\n    			if(title_el.hasClass('more')){\n    			}else if(title_el.find('span.more')){\n    			    title_el = title_el.find('.more');\n    			}else{\n    			    title_el = null;\n    			}\n			}\n			var url = $.get_url(url);\n			\n			if(el.attr('item_tmpl') == undefined || el.attr('total_tmpl') == undefined){\n				$.template(el.attr('id') + '_item_tmpl', el.find('li:first-child').outerHtml());\n				el.attr('item_tmpl', el.attr('id') + '_item_tmpl');\n                \n                if(title_el){\n    				$.template(el.attr('id') + '_total_tmpl', title_el.html());\n    				el.attr('total_tmpl', el.attr('id') + '_total_tmpl');\n                }\n\n				el.attr('empty_tmpl', el.find('li.empty').outerHtml());\n				loadel = el.find('li.loading');\n				if(loadel.length == 1){\n					el.attr('loading_tmpl', loadel.outerHtml());\n				} else {\n					el.attr('loading_tmpl', '<li class=\"loading\"><span class=\"loading\">'+__('数据读取中...')+'</span></li>');\n				}\n				\n				loadmore = el.find('li.more');\n				if(loadmore.length == 1){\n					el.attr('loadmore_tmpl', loadmore.outerHtml());\n				}\n\n				el.empty();\n				if(title_el){title_el.empty();}\n			}\n			\n			//if(title_el){title_el.html('');}\n			el.bwidget_load(params, clean, restart);\n			var ps = $.extend($.extend({}, params), {'start': el.attr('start'), 'count': el.attr('pagesize')});\n			\n			$.run(url, 'get', ps, function(data){\n			    data['_params'] = params;\n				if(title_el){\n				    title_el.html($.tp(el.attr('total_tmpl'), data));\n			    }\n				if(el.attr('start') == '-1'){\n					var pagesize = Number(el.attr('pagesize'));\n					var pstart = (Math.ceil(data.total_count/pagesize)-1) * pagesize;\n					el.attr('start', pstart);\n				}\n				if(data.items.length > 0){\n					el.find('li.loading, li.empty, li.more').remove();\n					var more_items = el.find('li').size() + data.items.length - Number(el.attr('maxitems'));\n					var last_pos = -1;\n					if(more_items > 0){\n						//el.find('li:lt('+ more_items +')').remove();\n						el.empty();\n						last_pos = el.offset().top;\n					}\n					for (var i=0; i < data.items.length; i++) {\n						var item = data.items[i];\n						item['index'] = Number(el.attr('start')) + i;\n						item['rank'] = Number(el.attr('start')) + i + 1;\n						el.append($.tp(el.attr('item_tmpl'), item));\n					}\n					if(el.attr('loadmore_tmpl') && Number(data.total_count) > Number(el.attr('start')) + data.items.length){\n						el.append($.tp(el.attr('loadmore_tmpl'), data));\n						el.find('li.more a').bind('click', function(event) {\n							$(this).unbind('click');\n							$(this).addClass('disable');\n							$(this).addClass('loading');\n							$(this).text(__('数据读取中...'));\n							var list = $(this).parent().parent();\n							list.attr('start', Number(list.attr('start')) + Number(list.attr('pagesize')));\n							list.blist(url, params, innercb, false, false);\n						});\n					}\n					if(el.next().is('ul.page')){\n						var total = Number(data.total_count);\n						var start = Number(el.attr('start'));\n						var pagesize = Number(el.attr('pagesize'));\n						\n						if(total > pagesize){\n							var page = el.next();\n							page.empty();\n						\n							var current_page = Math.floor(start/pagesize) + 1;\n							var last_page = Math.floor(total/pagesize) + 1;\n							\n							if(page.hasClass('bar')){\n								if(current_page > 1){\n									page.append('<li class=\"first\" page=\"1\">'+__('首页')+'</li>');\n									page.append('<li class=\"prev\" page=\"'+ (current_page-1) +'\">'+__('上一页')+'</li>');\n								}else{\n									page.append('<li class=\"first disable\">'+__('首页')+'</li>');\n									page.append('<li class=\"prev disable\">'+__('上一页')+'</li>');\n								}\n\n								if(current_page < last_page){\n									page.append('<li class=\"next\" page=\"'+(current_page+1)+'\">'+__('下一页')+'</li>');\n								}else{\n									page.append('<li class=\"next disable\">'+__('下一页')+'</li>');\n								}\n								page.append('<li class=\"current pages\">'+ __('第%s页/共%s页', [current_page,last_page]) +'</li>');\n							}else{\n								var start_page = Math.max(1, current_page - 3);\n								var end_page = Math.min(last_page, current_page + 3);\n								if(current_page > 3){\n									page.append('<li class=\"first\" page=\"1\">'+__('首页')+'</li>');\n								}\n								for(;start_page<=end_page;start_page++){\n									page.append('<li page=\"'+start_page+'\"'+ ((current_page==start_page)?' class=\"current\"':'') +'>'+start_page+'</li>');\n								}\n								if(end_page < last_page){\n									page.append('<li class=\"last\" page=\"'+last_page+'\">'+__('最后')+'</li>');\n								}\n							}\n						\n							page.find('li:not(.current):not(.disable)').click(function(e){\n								var list = $(this).parent().prev();\n								list.attr('start', (Number($(this).attr('page')) -1) * Number(list.attr('pagesize')));\n								page.empty();\n								list.blist(url, params, innercb, true, false);\n							});\n							\n							page.show();\n						} else {\n							el.next().hide();\n						}\n					}\n					if(last_pos > 0){\n						window.scrollTo( 0, last_pos || 0);\n					}\n				} else {\n					if(data.total_count == 0){\n						el.html(el.attr('empty_tmpl'));\n					} \n					if(el.next().is('ul.page')){\n						el.next().hide();\n					}\n				}\n				if(innercb != undefined){\n					innercb(el, data);\n				}\n			});\n		},\n		btabs : function(fn){\n			var _call_fn = fn;\n			$(this).find('li a').tap(function(e){\n				var el = $(this);\n				$('div.tab_content').hide();\n				_call_fn.call(el, el.attr('id'));\n				window.location.hash = $(this).attr('id') + '_hash';\n				if(el.attr('title')){\n					$.\n				}\n				$('div#'+ el.attr('id') +'_content.tab_content').show();\n			});\n			if( window.location.hash &&  window.location.hash.substring(0,5) == '#tab_'){\n				acttab = window.location.hash.substr(0, window.location.hash.length - 5);\n				$(acttab).trigger('click');\n			} else {\n				$($(this).find('li a').dom[0]).trigger('click');\n			}\n		}\n	});\n	\n	$(function(){\n        // var guest = $.cookie('guest');\n        // if(guest == 'true' ||true){\n        //  var path = window.location.pathname;\n        //  if(path.length<6 || path.substring(path.length - 6, path.length) != '/guest'){\n        //      window.location = 'guest?next=' + $.url_encode(window.location.href);\n        //      return;\n        //  }\n        // }\n		var staticdir = '/wigame/static/';\n		$('body').addClass($.classLevel());\n		\n		$(window).bind(\"orientationchange\", function(event){\n			var orientation = $.get_orientation();\n			$('html').removeClass( \"portrait\" ).removeClass('landscape').addClass( orientation );\n		});\n		\n		$('html').addClass( $.get_orientation() );\n\n		// $(window).trigger( \"orientationchange\" );\n		// $(window).trigger( \"hashchange\", [ true ] );\n		\n		// layout\n		$.layout();\n		$.load_adv();\n		$('ul.ls>li:not(.btns):not(.cell):not(.more)>a:only-child:not(.btnpop)').after('<span class=\"icon arrow\"></span>');\n		$('.pop').prepend('<div><div class=\"cor\"></div></div>');\n		$('.tabs li, .menu').append('<div class=\"cor\"></div>');\n		\n		$('.btns').append('<div class=\"clear\"></div>');\n		\n		$('.tmpl').each(function(){\n			$(this).tpload();\n		});\n		\n		//$(window).trigger(\"loadpage\");\n		if(window['loadpage_fn']){\n			window['loadpage_fn']();\n		}\n		\n        if(!$('html').hasClass('lazy_show')){\n            $('html').removeClass('ui-mobile-rendering');\n        }\n	})\n})(Zepto);\n\n//gloabe functions\nwindow['open_pic'] = function(e){\n	if($.config('shell') == 'wigame_iphone' || $.config('shell') == 'wigame_android') {\n		$.runaction('imagegallary', {'images': $(e).attr('_href')});\n		return false;\n	}\n	return true;\n}\n",
+					"file": "newgit/wigame_mobile/static/js/zepto.main.js",
+					"file_size": 34568,
+					"file_write_time": 1321410043000000,
+					"settings":
+					{
+						"buffer_size": 34392,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"pa",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 579.0
+			},
+			"console":
+			{
+				"height": 357.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/sshwsfc/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+				"/Users/sshwsfc/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+				"/Users/sshwsfc/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"break"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "newgit/wigame_mobile/htmls/wibox/me/main.html",
+							"settings":
+							{
+								"buffer_size": 2667,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										720,
+										720
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Djaneiro/Django.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 27.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "newgit/wigame_mobile/htmls/wibox/me/u.html",
+							"settings":
+							{
+								"buffer_size": 3208,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1097,
+										1097
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Djaneiro/Django.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "newgit/wigame_mobile/static/js/zepto.main.js",
+							"settings":
+							{
+								"buffer_size": 34392,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										32395,
+										32395
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 19491.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0 0 1544 878 0 0 1600 878 ",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 198.0,
+			"status_bar_visible": true,
+			"window_id": 5,
+			"workspace_name": "/Users/sshwsfc/workspace/work.sublime-project"
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/Users/sshwsfc/workspace/work.sublime-project"
+		]
+	}
+}
